@@ -1,0 +1,65 @@
+body {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto 1fr;
+gap: 20px;
+grid-template-areas: 
+"header header"
+"main section";
+margin: 0;
+padding: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #3a3434;
+    color: white;
+    padding: 15px;
+  
+}
+header nav{
+    text-align: center;
+font-size: large;
+letter-spacing: 1px;
+}
+nav a{
+margin-right: 4rem;
+text-decoration: none;
+color: aqua;
+
+}
+header h2 {
+text-align: center;
+
+}
+.container-Form{
+grid-area: main;
+background-color: #4b4545;
+padding: 20px;
+text-align: center;
+border-radius: 2rem;
+
+}
+form input {
+display: block;
+position:relative;
+width: 50%;
+align-content: center;
+color: #a916ce;
+background-color: #e9e6e6;
+
+}
+
+
+.container-Contato{
+    grid-area: section;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.container-Contato img{
+width:100% ;
+height: auto;
+}
